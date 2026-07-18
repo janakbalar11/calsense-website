@@ -547,6 +547,27 @@ p { color: var(--slate); }
 .mt-lg { margin-top: 48px; }
 .small-note { font-size: 0.82rem; color: var(--slate); opacity: 0.8; margin-top: 10px; }
 
+/* Prototype-stage disclaimer */
+.proto-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--slate);
+  background: rgba(75, 85, 99, 0.08);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  max-width: 620px;
+}
+.proto-note .proto-icon { flex-shrink: 0; line-height: 1.4; }
+.section--navy .proto-note {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.16);
+  color: rgba(255,255,255,0.72);
+}
+.proto-note--center { margin-left: auto; margin-right: auto; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
   .hero .container { grid-template-columns: 1fr; }
